@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.jpg" type="images/x-icon">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Caesar Cipher</h1>
+    <div>
+        <input type="radio" id="encrypt" name="encryptDecrypt" checked>
+        <label for="encrypt">Encrypt</label>
+        <input type="radio" id="decrypt" name="encryptDecrypt">
+        <label for="decrypt">Decrypt</label>
+    </div>
+    <div>
+        <label for="message">What is your secret message? </label>
+        <input type="text" id="message">
+    </div>
+    <div>
+        <label for="key">What is your key? </label>
+        <input type="text" id="key">
+    </div>
+    <button onclick="processCipher()">Submit</button>
+    <p id="output">Your message is:</p>
+    <div>
+        <div id="outsideImage">
+            <img src="images/innerCircle.jpg" alt="image" id="innerCircle">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
